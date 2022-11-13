@@ -1,0 +1,55 @@
+<!--Componente de loggin-->
+<div class="login-wrap cover">
+  <div class="container-login">
+    <p class="text-center" style="font-size: 80px">
+      <i class="zmdi zmdi-account-circle"></i>
+    </p>
+    <p class="text-center text-condensedLight">Inicie sesión con su cuenta</p>
+    <!--Inicio del formulario angular-->
+    <form #Form="ngForm" (ngSubmit)="Form.valid && Login(Form)">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <!--Input Requerido, controlado por property binding y two way binding para la interaccion de datos-->
+        <input
+          class="mdl-textfield__input"
+          type="text"
+          id="userName"
+          name="user"
+          [(ngModel)]="UserInput"
+          required
+          #User="ngModel"
+        />
+        <span
+          *ngIf="!User.valid && User.touched"
+          style="color: rgb(105, 129, 19); background-color: rgb(127, 255, 165)"
+          >User Name Invalid</span
+        >
+        <label class="mdl-textfield__label" for="userName">User Name</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <!--Input Requerido, controlado por property binding y two way binding para la interaccion de datos-->
+        <input
+          class="mdl-textfield__input"
+          type="password"
+          id="pass"
+          name="pass"
+          [(ngModel)]="PasswordInput"
+          required
+          #Pass="ngModel"
+        />
+        <span
+          *ngIf="!Pass.valid && Pass.touched"
+          style="color: rgb(105, 129, 19); background-color: rgb(127, 255, 165)"
+          >Password Invlid</span
+        >
+        <label class="mdl-textfield__label" for="pass">Password</label>
+      </div>
+      <button
+        type="submit"
+        class="mdl-button mdl-js-button mdl-js-ripple-effect"
+        style="color: #3f51b5; margin: 0 auto; display: block"
+      >
+        SIGN IN
+      </button>
+    </form>
+  </div>
+</div>

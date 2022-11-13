@@ -19,13 +19,31 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/assets/icons/mCSB_buttons.png",
               "src/favicon.ico",
-              "src/assets"
+              "src/assets/img/fontLogin.jpg",
+              "src/assets/img/avatar-female.png",
+              "src/assets/img/avatar-female2.png",
+              "src/assets/img/avatar-male.png",
+              "src/assets/img/avatar-male2.png",
+              "src/assets/img/FontNavLateral.jpg"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/css/main.css",
+              "src/css/material.min.css",
+              "src/css/normalize.css",
+              "src/css/sweetalert2.css",
+              "src/css/material-design-iconic-font.min.css",
+              "src/css/jquery.mCustomScrollbar.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/jquery-1.11.2.min.js",
+              "src/js/jquery.mCustomScrollbar.concat.min.js",
+              "src/js/main.js",
+              "src/js/material.min.js",
+              "src/js/sweetalert2.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -86,16 +104,37 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
+              "src/assets/icons/mCSB_buttons.png",
               "src/favicon.ico",
-              "src/assets"
+              "src/assets/img/fontLogin.jpg",
+              "src/assets/img/avatar-female.png",
+              "src/assets/img/avatar-female2.png",
+              "src/assets/img/avatar-male.png",
+              "src/assets/img/avatar-male2.png",
+              "src/assets/img/FontNavLateral.jpg"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/css/main.css",
+              "src/css/material.min.css",
+              "src/css/normalize.css",
+              "src/css/sweetalert2.css",
+              "src/css/material-design-iconic-font.min.css",
+              "src/css/jquery.mCustomScrollbar.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/jquery-1.11.2.min.js",
+              "src/js/jquery.mCustomScrollbar.concat.min.js",
+              "src/js/main.js",
+              "src/js/material.min.js",
+              "src/js/sweetalert2.min.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "7841e2d7-9410-4114-9189-5bbe3055f321"
   }
 }
