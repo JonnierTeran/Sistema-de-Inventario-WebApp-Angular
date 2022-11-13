@@ -29,6 +29,7 @@ export class LoginComponent {
     this.PasswordInput = '';
   }
 
+  
   //Metodo de tipo void para Acceder al panel de control (Recibe por parametro el formulario de angular)
   public Login(Form:NgForm): void {
     //Se crea un oobjeto usuario con los datos ingresados en el formulario
@@ -52,7 +53,7 @@ export class LoginComponent {
         showConfirmButton: false,
         timer: 750,
       });
-      Form.reset();
+      Form.reset(); 
     }
   }
 }
