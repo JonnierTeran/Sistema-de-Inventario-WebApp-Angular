@@ -42,9 +42,10 @@ export class LoginComponent {
         icon: 'success',
         title: 'Signed in successfully',
         showConfirmButton: false,
-        timer: 750,
+        timer: 1900,
       });
       Form.reset();
+      this.Router.navigate(["Control/Panel/Inventory"])
     } else {
       Swal.fire({
         position: 'center',
