@@ -1,0 +1,17 @@
+<section class="full-width header-well">
+    <div class="full-width header-well-icon">
+        <i class="zmdi zmdi-truck"></i>
+    </div>
+    <div class="full-width header-well-text">
+        <p class="text-condensedLight">
+           Aqui encontrara informacion detallada sobre los proveedores inscritos al negocio
+        </p>
+    </div>
+</section>
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+    <div class="mdl-tabs__tab-bar">
+        <a routerLink="Formulario/Registro" routerLinkActive="active-link"  class="mdl-tabs__tab">Nuevo</a>
+        <a routerLink="Listado" routerLinkActive="active-link"  class="mdl-tabs__tab">Inscritos</a>
+    </div>
+
+    <router-outlet></router-outlet>

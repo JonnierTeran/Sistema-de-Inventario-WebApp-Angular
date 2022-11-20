@@ -1,0 +1,69 @@
+<div class="mdl-tabs__panel is-active" id="tabNewProvider">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+            <div class="full-width panel mdl-shadow--2dp">
+                <div class="full-width panel-tittle bg-primary text-center tittles">
+                    New Provider
+                </div>
+                <div class="full-width panel-content">
+                    <form>
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <legend class="text-condensedLight"><i class="zmdi zmdi-border-color"></i> &nbsp; DATA PROVIDER</legend><br>
+                            </div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="DNIProvider" placeholder="DNI">
+                                    <label class="mdl-textfield__label" for="DNIProvider"></label>
+                                    <span class="mdl-textfield__error">Invalid number</span>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" pattern="-?[A-Za-z0-9 ]*(\.[0-9]+)?" id="NameProvider" placeholder="Name">
+                                    <label class="mdl-textfield__label" for="NameProvider"></label>
+                                    <span class="mdl-textfield__error">Invalid name</span>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="addressProvider" placeholder="Address">
+                                    <label class="mdl-textfield__label" for="addressProvider"></label>
+                                    <span class="mdl-textfield__error">Invalid address</span>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="tel" pattern="-?[0-9+()- ]*(\.[0-9]+)?" id="phoneProvider" placeholder="Phone">
+                                    <label class="mdl-textfield__label" for="phoneProvider"></label>
+                                    <span class="mdl-textfield__error">Invalid phone number</span>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="email" id="emailProvider" placeholder="E-mail">
+                                    <label class="mdl-textfield__label" for="emailProvider"></label>
+                                    <span class="mdl-textfield__error">Invalid E-mail</span>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="webProvider" placeholder="Web">
+                                    <label class="mdl-textfield__label" for="webProvider"></label>
+                                    <span class="mdl-textfield__error">Invalid web address</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored bg-primary" id="btn-addProvider">
+                                <i class="zmdi zmdi-plus"></i>
+                            </button>
+                            <div class="mdl-tooltip" for="btn-addProvider">Add provider</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

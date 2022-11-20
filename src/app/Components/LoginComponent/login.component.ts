@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 //Import del servicio para el router/Redirecciones
 import { Router } from '@angular/router';
 //import del Modelo de Objetos del Usuario
-import { UserModel } from '../models/User.models';
+import { UserModel } from '../../models/User.models';
 //Import de la libreria de alertas de js
 import Swal from 'sweetalert2';
 //Modelo para el formulario Angular

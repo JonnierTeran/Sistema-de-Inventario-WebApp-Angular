@@ -404,7 +404,7 @@ html, body{
 	color: #fff;
 	width: 100%;
 	font-size: 25px;
-	background-color: var(--acent-color);
+	background-color:#fd782b;
 }
 .navLateral-body-logo .zmdi-close{
 	width: 0;
@@ -449,6 +449,7 @@ html, body{
 }
 .navLateral-body-tittle-menu img{
 	max-width: 70px;
+	cursor: pointer;
 }
 .menu-principal li,
 .menu-principal li a{
@@ -461,12 +462,13 @@ html, body{
 	transition: all .3s ease-in-out;
 }
 .menu-principal > li > a:hover{
-	background-color: var(--acent-color);
+	background-color: rgb(192, 127, 42);
 }
 .menu-principal li a div.navLateral-body-cl,
 .menu-principal li a div.navLateral-body-cr{
 	height: 45px;
 	line-height: 45px;
+	cursor: pointer;
 }
 .menu-principal li a div.navLateral-body-cl{
 	text-align: center;
@@ -510,7 +512,7 @@ html, body{
 ======================================================*/
 /*=============Azulejos o accesos directos(Tiles)*/
 .tile{
-	border: 1px solid #E1E1E1;
+	border: 1px solid #dbcccc;
 	height: 140px;
 	width: 30%;
 	margin: 0 1%;
@@ -520,8 +522,10 @@ html, body{
 	cursor: pointer;
 	margin-bottom: 20px;
 	display: inline-block;
+	border-radius: 12px;
 }
-.tile:hover .tile-text span{ color: #3F51B5; }
+.tile:hover .tile-text span{ color: #0307f0; }
+.tile .tile-text span{ color: #669650; }
 .tile:hover .tile-icon{
 	color: rgba(0,191,238,.3);
 	transform: scale(1.5) translate(-10px, -10px);
@@ -535,11 +539,9 @@ html, body{
 .tile-text span,
 .tile-icon{
 	position: absolute;
-	color: rgba(0,0,0,.3);
+	color: rgba(14, 13, 13, 0.3);
 	transition: all .3s ease-in-out;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+	
 }
 .tile-text span{
 	top: 50%;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-control-panel',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControlPanelComponent implements OnInit {
 
-  constructor() { }
+  constructor(private Router: Router) { }
 
   ngOnInit(): void {
+    this.Router.navigate(["Control/Panel/Inventory/Home"])
   }
 
 }
